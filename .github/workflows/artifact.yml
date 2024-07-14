@@ -11,7 +11,7 @@ jobs:
           path: date.txt
           retention-days: 7
   download:
-    runs-on: ubunts-latest
+    runs-on: ubuntu-latest
     needs: [upload]
     steps:
       - uses: actions/download-artifact@v4
